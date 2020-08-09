@@ -1,27 +1,7 @@
-import { ADD_FETCHED_DATA, ADD_FAVORITE_TERM, REMOVE_FAVORITE_TERM, GET_DETAIL_POKEMON, ADD_FETCHED_DATA_POKEMON_TYPE, ADD_FETCHED_DATA_POKEMON_TYPE_DETAIL } from './types.js';
+import { ADD_FETCHED_DATA, GET_DETAIL_POKEMON, ADD_FETCHED_DATA_POKEMON_TYPE, ADD_FETCHED_DATA_POKEMON_TYPE_DETAIL } from './types.js';
 import axios from 'axios';
 const apiUrl = 'https://pokeapi.co/api/v2/pokemon?limit=50';
 const apiUrlPokemonType = 'https://pokeapi.co/api/v2/type'
-
-export const addFavoriteTerm =  (data) => {
-  return {
-    type: ADD_FAVORITE_TERM,
-    payload: {
-      name: data.name,
-      description: data.description
-    }
-  }
-}
-
-export const removeFavoriteTerm = name => {
-  return {
-    type: REMOVE_FAVORITE_TERM,
-    payload: {
-      name
-    }
-  }
-}
-
 
 // FETCH URL SECTIONS
 
