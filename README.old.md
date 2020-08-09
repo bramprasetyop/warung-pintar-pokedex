@@ -1,1 +1,0 @@
-# warung-pintar-pokedex
