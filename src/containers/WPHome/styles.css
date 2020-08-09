@@ -1,0 +1,30 @@
+.wp-home {
+  padding: 32px;
+}
+
+h2 {
+  text-transform: capitalize;
+}
+
+.wp-home img {
+  object-fit: contain;
+}
+
+.wp-home-headline {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin: 0;
+}
+.wp-home--not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 25%;
+  border: 1px solid darkgray;
+  background: darkgray;
+  opacity: 0.7;
+  border-radius: 2px;
+  margin: 24px;
+}
